@@ -1,6 +1,7 @@
 import json
 import requests
 import smtplib
+import random
 from email.message import EmailMessage
 from config import EMAIL_SENDER, EMAIL_PASSWORD, EMAIL_RECEIVER
 import time
@@ -81,4 +82,5 @@ if __name__ == "__main__":
             main()
         except Exception as e:
             print("❌ Chyba při běhu:", e)
-        time.sleep(10)
+        delay = random.randint(8, 15)
+        time.sleep(delay)
