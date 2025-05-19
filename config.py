@@ -1,5 +1,7 @@
-# config.py
-EMAIL_SENDER = "plazabot@seznam.cz"
-EMAIL_PASSWORD = ":)pOm..blv1"
-EMAIL_RECEIVER = "tomholinka@seznam.cz"
+import os
+
+EMAIL_SENDER = os.getenv("EMAIL_SENDER")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER")
+
 
