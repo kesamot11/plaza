@@ -1,0 +1,5 @@
+# config.py
+EMAIL_SENDER = "plazabot@seznam.cz"
+EMAIL_PASSWORD = ":)pOm..blv1"
+EMAIL_RECEIVER = "tomholinka@seznam.cz"
+
