@@ -76,11 +76,14 @@ def main():
 
     save_seen(seen)
 
-if __name__ == "__main__":
+def loop():
     while True:
         try:
             main()
         except Exception as e:
-            print("❌ Chyba při běhu:", e)
+            print(f"⚠️ Chyba při provádění: {e}")
         delay = random.randint(8, 15)
         time.sleep(delay)
+
+if __name__ == "__main__":
+    loop()
